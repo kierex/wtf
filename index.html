@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -14,67 +14,45 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 0;
     }
 
-    h2 {
+    h1, h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: #222;
     }
 
-    .section {
-      padding: 60px 20px;
-      background: #f2f2f2;
-      margin-top: 40px;
-      border-radius: 12px;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .section p, .section ul {
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-
-    form {
+    #contact form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
+      gap: 12px;
+      max-width: 400px;
       margin-top: 20px;
     }
 
-    form input, form textarea {
-      padding: 12px;
+    #contact input, #contact textarea {
+      padding: 10px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 6px;
       font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
     }
 
-    form button {
-      padding: 12px;
+    #contact button {
+      padding: 10px;
       background-color: #007bfc;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
 
-    form button:hover {
-      background-color: #005dc1;
+    #contact button:hover {
+      background-color: #005bb5;
     }
   </style>
 </head>
 
 <body>
+
   <!-- OVERLAY -->
   <div class="overlay first"></div>
   <div class="overlay second"></div>
@@ -117,7 +95,7 @@
       </div>
 
       <div class="home__img">
-        <img src="https://i.imgur.com/bfELRaR.jpeg" alt="Profile Image" />
+        <img src="https://i.imgur.com/bfELRaR.jpeg" alt="">
       </div>
 
       <div class="home__social">
@@ -130,7 +108,7 @@
     <!-- About Section -->
     <section id="about" class="section">
       <h2>About Me</h2>
-      <p>I am Vern Esg, a passionate web developer who builds clean and creative websites for modern businesses.</p>
+      <p>I am Vern Esg, a passionate web developer who builds clean and creative websites.</p>
     </section>
 
     <!-- Services Section -->
@@ -164,7 +142,7 @@
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
-  <!-- MAIN JS -->
+  <!-- MAIN -->
   <script src="assets/js/main.js"></script>
 
   <!-- ICONS -->
