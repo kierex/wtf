@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>My Personal Portfolio </title>
-    </head>
-    <body>
-        <!-- OVERLAY -->
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
 
-        <!-- HEADER -->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Bedimcode</a>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>My Personal Portfolio</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<body>
+  <!-- OVERLAY -->
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <ion-icon name="menu"></ion-icon>
-                </div>
-            </nav>
-        </header>
+  <!-- HEADER -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Bedimcode</a>
+      </div>
 
-        <!-- MAIN -->
-        <main class="l-main bd-grid">
-            <div class="home">
-                <div class="home__information">
-                    <span class="home__pressent Esg-text">Hello, My name is</span>
-                    <h1 class="home__title anime-text">Vern Doe</h1>
-                    <span class="home__skill anime-text">Web Developer</span>
-                    
-                    <div>
-                        <a href="#" class="home__button anime-text">Developer</a>
-                    </div>
-                </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
 
-                <div class="home__img">
-                    <img src="https://i.imgur.com/bfELRaR.jpeg" alt="">
-                </div>
-                
-                <div class="home__social">
-                    <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
-                </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <ion-icon name="menu"></ion-icon>
+      </div>
+    </nav>
+  </header>
 
-            </div>
-        </main>
+  <!-- MAIN -->
+  <main class="l-main bd-grid">
+    <div class="home">
+      <div class="home__information">
+        <span class="home__pressent Esg-text">Hello, My name is</span>
+        <h1 class="home__title anime-text">Vern Esg</h1>
+        <span class="home__skill anime-text">Web Developer</span>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <div>
+          <a href="#" class="home__button anime-text">Phishing Websites</a>
+        </div>
+      </div>
 
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
-    
-        <!-- ICONS -->
-        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-    </body>
+      <div class="home__img">
+        <img src="https://i.imgur.com/bfELRaR.jpeg" alt="Profile Image" />
+      </div>
+
+      <div class="home__social">
+        <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
+        <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
+        <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am Vern Esg, a passionate web developer who loves building clean and effective web solutions.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <ul>
+        <li>Responsive Website Development</li>
+        <li>Landing Page Design</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p>Coming soon! I’ll be sharing web dev tips, tutorials, and project showcases.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- ICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
 </html>
